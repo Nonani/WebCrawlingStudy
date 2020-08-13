@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>371</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>여기에 출력됩니다.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>첫번째 버튼</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>두번째 버튼</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>세번째 버튼</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>slot_1st()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>slot_2nd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>232</x>
+     <y>348</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>slot_3rd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>362</x>
+     <y>349</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>label_action()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>197</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_1st()</slot>
+  <slot>slot_2nd()</slot>
+  <slot>slot_3rd()</slot>
+  <slot>label_action()</slot>
+ </slots>
+</ui>
